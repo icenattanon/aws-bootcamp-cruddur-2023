@@ -7,3 +7,4 @@
 ```
 codeblock 
 ```
+![architecture diagram](assets/Week0-architecture-diagram-first-attempt.PNG)
