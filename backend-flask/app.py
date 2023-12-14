@@ -60,7 +60,7 @@ tracer = trace.get_tracer(__name__)
 app = Flask(__name__)
 
 # X-RAY ----------
-XRayMiddleware(app, xray_recorder)
+#XRayMiddleware(app, xray_recorder)
 
 # HoneyComb ---------
 # Initialize automatic instrumentation with Flask
@@ -79,6 +79,7 @@ cors = CORS(
   methods="OPTIONS,GET,HEAD,POST"
 )
 
+# CloudWatch ---------
 #@app.after_request
 #def after_request(response):
 #  timestamp = strftime('[%Y-%b-%d %H:%M]')
