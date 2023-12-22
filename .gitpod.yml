@@ -12,6 +12,10 @@ tasks:
     command: |
       cd frontend-react-js
       npm i
+  - name: aws-amplify
+    command: |
+      cd frontend-react-js
+      npm install -g @aws-amplify/cli
 vscode:
   extensions:
     - 42Crunch.vscode-openapi
@@ -27,3 +31,6 @@ ports:
   - name: xray-daemon
     port: 2000
     visibility: public
+
+    amplify configure
+    region:  ca-central-1
